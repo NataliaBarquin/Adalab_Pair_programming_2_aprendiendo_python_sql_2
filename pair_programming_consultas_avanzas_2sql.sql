@@ -29,7 +29,15 @@ FROM `employees`
 GROUP BY `city`
 HAVING COUNT(`employee_id`) >= 4;
 
--- FALTA EJERCICIO 6
+-- EJERCICIO 6
+
+SELECT *,
+       CASE
+           WHEN (unit_price * quantity) > 2000 THEN 'Alto'
+           ELSE 'Bajo'
+       END AS categoria
+FROM order_details;
+
 
 
 
