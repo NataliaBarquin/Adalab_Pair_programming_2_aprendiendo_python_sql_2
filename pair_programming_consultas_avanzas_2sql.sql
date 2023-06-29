@@ -29,10 +29,6 @@ FROM `employees`
 GROUP BY `city`
 HAVING COUNT(`employee_id`) >= 4;
 
-SELECT COUNT(`employee_id`) >= 4, `city` AS ciudades
-FROM `employees`
-GROUP BY `city`;
-
 -- FALTA EJERCICIO 6
 
 
